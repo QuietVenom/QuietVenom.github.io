@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.navbar-brand{
+    font-size: 45px;
+}
+.nav-item{
+    text-align: center;
+    font-size: 35px;
+}
+h1{
+    color: white;
+    font-size: 75px;
+    padding-top: 150px;
+}
+.browse a{
+    color: white;
+    font-size: 22px;
+    text-align: right;
+    margin: 150px 30px auto;
+    text-decoration: none;
+    display: inline-block;
+}
+    .browse a:hover{
+    text-decoration: none;
+    }
