@@ -1,60 +1,150 @@
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 body{
     font-family: 'Ramabhadra', sans-serif;
     background: black;
 }
-.navbar-brand{
-    font-size: 45px;
-}
-.social{
-    color: white;
-    position: relative;
-    left: 525px;
-    top: 8px;
-}
-.nav-item{
-    text-align: center;
-    font-size: 35px;
-}
-.salute{
-    color: white;
-    font-size: 75px;
-    padding-top: 150px;
-    height: 350px;
-}
-.browse a{
-    color: white;
-    font-size: 22px;
-    margin: 150px 30px auto;
+a{
     text-decoration: none;
-    display: inline-block;
 }
-    .browse a:hover{
-    text-decoration: none;
-    }
-.about{
-    color: white;
-    font-size: 22px;
-    margin-top: 550px;
-    height: 200px;
-}
-.footer{
-    background: #000;
+.parent{
     display: flex;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:40px;
+    flex-flow: column nowrap;
 }
-    .foot{
-        text-align: center;
+.inside-margin{
+    padding: 0 25px;
+}
+    .header{
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
     }
-    .foot p{
-        color: white;
-        font-size: 11px;
-        text-transform: uppercase;
-        padding: 0 10px;
-        letter-spacing: 2px;
+        .menu{
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: white;
+                    font-size: 60px;
+                }
+                .logo a:hover{
+                    color: #343434;
+                }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+                justify-content: flex-end;
+            }
+                .social a{
+                    font-size: 30px;
+                    color: white;
+                    padding: 0 5px;
+                }
+                .social a:hover{
+                    color: #343434;
+                }
+        .main-text{
+            height: 570px;
+            display: flex;
+            align-items: center;
+        }
+            h1{
+                font-size: 75px;
+                color: white;
+                text-align: left;
+                line-height: 1.6;
+            }
+        .browse a{
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            float: right;
+        }
+    .section{
+        height: 625px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
     }
+        .section p{
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: left;
+    }
+        .foot{
+            text-align: center;
+        }
+        .foot a{
+            color: white;
+            font-size: 11px;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+@media all and (max-width: 940px){
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .section{
+        height: 455px;
+    }
+    .section p{
+        font-size: 15px;
+        text-align: left;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .main-text{
+        height: 350px;
+    }
+    .browse a{
+        font-size: 15px;
+        top: 125px;
+        margin-right: 5px;
+    }
+}
+@media all and (max-width: 750px){
+    .section{
+        height: 460px;
+    }
+    .section p{
+        font-size: 12px;
+        text-align: left;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .main-text{
+        height: 350px;
+    }
+    .browse a{
+        font-size: 10px;
+        top: 125px;
+        margin-right: 5px;
+    }
+    .foot a{
+        font-size: 8px;
+    }
+}
