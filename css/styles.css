@@ -16,6 +16,9 @@ body{
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
 .parent{
     display: flex;
     flex-flow: column nowrap;
@@ -76,6 +79,9 @@ a{
             color: white;
             float: right;
         }
+        .browse a:hover{
+            color: #343434;
+        }
     .section{
         height: 625px;
         display: flex;
@@ -85,7 +91,7 @@ a{
         .section p{
             color: white;
             text-align: center;
-            font-size: 20px;
+            font-size: 30px;
         }
     .footer{
         background: black;
