@@ -2,28 +2,59 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Ramabhadra', sans-serif;
     background: black;
 }
 .navbar-brand{
     font-size: 45px;
 }
+.social{
+    color: white;
+    position: relative;
+    left: 525px;
+    top: 8px;
+}
 .nav-item{
     text-align: center;
     font-size: 35px;
 }
-h1{
+.salute{
     color: white;
     font-size: 75px;
     padding-top: 150px;
+    height: 350px;
 }
 .browse a{
     color: white;
     font-size: 22px;
-    text-align: right;
     margin: 150px 30px auto;
     text-decoration: none;
     display: inline-block;
 }
     .browse a:hover{
     text-decoration: none;
+    }
+.about{
+    color: white;
+    font-size: 22px;
+    margin-top: 550px;
+    height: 200px;
+}
+.footer{
+    background: #000;
+    display: flex;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:40px;
+}
+    .foot{
+        text-align: center;
+    }
+    .foot p{
+        color: white;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
     }
